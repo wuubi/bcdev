@@ -1,3 +1,6 @@
+require("dotenv").config({
+	path: `.env.${process.env.NODE_ENV}`,
+})
 module.exports = {
   siteMetadata: {
     title: `BigCom.dev`,
@@ -18,21 +21,20 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `bigcom-dev-gatsby`,
+        short_name: `bcgatsby`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
+        background_color: `#34313f`,
+        theme_color: `#34313f`,
         display: `minimal-ui`,
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
       resolve: "gatsby-source-bigcommerce",
       options: {
-        clientId: "rsbi1lm001ylbp7zcr1p7nmkqjqezw5",
-        clientSecret:
-          "276f648e97cbed52360e2176b5dff2a3d609764b4f3515d99769fd6466407e2f",
-        accessToken: "hzas68y21msosgq00v9gjf5fcrhszua",
-        storeHash: "bq4uczryb8",
+        clientId: process.env.CLIENT,
+        secret: process.env.SECRET,
+        accessToken: process.env.TOKEN,
+        storeHash: process.env.HASH,
         preview: true,
         logLevel: "info",
         nodeName: "BigCommerceNode",

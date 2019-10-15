@@ -2,15 +2,15 @@
 <p align="center">
   <a href="https://www.gatsbyjs.org">
     <img alt="Gatsby" src="https://www.gatsbyjs.org/monogram.svg" width="60" />
-  </a>
+  </a> + BC
 </p>
 <h1 align="center">
-  Gatsby's default starter
+  BigCom.dev - Gatsby
 </h1>
 
-Kick off your project with this default boilerplate. This starter ships with the main Gatsby configuration files you might need to get up and running blazing fast with the blazing fast app generator for React.
+This starter ships with the main Gatsby configuration files you might need to get up and running blazing fast with the blazing fast app generator for React. Implemented is gatsby-source-bigcommerce, which allows you to provide API credentials to connect with a BigCommerce store.
 
-_Have another more specific idea? You may want to check out our vibrant collection of [official and community-created starters](https://www.gatsbyjs.org/docs/gatsby-starters/)._
+_You may want to check out our vibrant collection of [official and community-created starters](https://www.gatsbyjs.org/docs/gatsby-starters/)._
 
 ## 🚀 Quick start
 
